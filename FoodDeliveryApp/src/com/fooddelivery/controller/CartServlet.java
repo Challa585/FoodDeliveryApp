@@ -63,14 +63,11 @@ public class CartServlet extends HttpServlet {
         }
 
         if ("checkout".equalsIgnoreCase(action)){
-            // Simple checkout: create Orders from Cart (assumes user id 1 for demo or session stored)
             Integer userId = (Integer) session.getAttribute("userid");
-            if (userId == null) userId = 1; // demo fallback
+            if (userId == null) userId = 1; 
 
             Orders order = new Orders();
             order.setOrderDate(new Timestamp(System.currentTimeMillis()));
-            // If all items from same restaurant required: you may pick restaurantId from first menu item
-            // For demo, set restaurantid to 1
             order.setRestaurantid(1);
             order.setUserid(userId);
             order.setTotalamount(cart.getTotalAmount());
@@ -92,7 +89,7 @@ public class CartServlet extends HttpServlet {
             if (orderId > 0) {
                
                 session.setAttribute("cart", cart);
-                resp.sendRedirect("restaurant"); // success page would be better
+                resp.sendRedirect("restaurant"); 
             } else {
                 resp.sendRedirect("cart.jsp?error=1");
             }
