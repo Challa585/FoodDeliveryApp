@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//WebContent/cart.jsp=UTF-8
+encoding//WebContent/checkout.jsp=UTF-8
+encoding//WebContent/menu.jsp=UTF-8
+encoding//WebContent/restaurant.jsp=UTF-8
+encoding//src/com/fooddelivery/controller/CartServlet.java=UTF-8
+encoding//src/com/fooddelivery/controller/OrdersServlet.java=UTF-8
+encoding//src/com/fooddelivery/controller/PlaceOrderServlet.java=UTF-8
+encoding//src/com/fooddelivery/controller/RegisterServlet.java=UTF-8
+encoding//src/com/fooddelivery/dao/impl/MenuDAOImp.java=UTF-8
+encoding//src/com/fooddelivery/dao/impl/OrdersDAOImpl.java=UTF-8
+encoding//src/com/fooddelivery/dao/impl/RestaurantDAOImpl.java=UTF-8
